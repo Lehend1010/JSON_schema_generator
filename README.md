@@ -1,3 +1,8 @@
+refer to https://github.com/perenecabuto/json_schema_generator.git
+modify json_schema_generator.py & validator.py
+add the local file input function
+the rest unchanged
+
 ### JSON Schema Generator
 
 #### About
