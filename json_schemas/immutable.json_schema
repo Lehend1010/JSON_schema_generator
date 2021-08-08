@@ -1,1 +1,63 @@
-
+{
+    "$schema": "http://json-schema.org/draft-03/schema#",
+    "id": "#",
+    "required": true,
+    "type": "array",
+    "items": {
+        "id": "0",
+        "required": true,
+        "type": "object",
+        "properties": {
+            "ID": {
+                "id": "ID",
+                "required": true,
+                "type": "string"
+            },
+            "City": {
+                "id": "City",
+                "required": true,
+                "type": "string"
+            },
+            "Address": {
+                "id": "Address",
+                "required": true,
+                "type": "string"
+            },
+            "Name": {
+                "id": "Name",
+                "required": true,
+                "type": "string"
+            },
+            "Latitude": {
+                "id": "Latitude",
+                "required": true,
+                "type": "string"
+            },
+            "Longitude": {
+                "id": "Longitude",
+                "required": true,
+                "type": "string"
+            },
+            "SensorType": {
+                "id": "SensorType",
+                "required": true,
+                "type": "string"
+            },
+            "Value": {
+                "id": "Value",
+                "required": true,
+                "type": "string"
+            },
+            "StartTime": {
+                "id": "StartTime",
+                "required": true,
+                "type": "string"
+            },
+            "EndTime": {
+                "id": "EndTime",
+                "required": true,
+                "type": "string"
+            }
+        }
+    }
+}
