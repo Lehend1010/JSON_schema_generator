@@ -6,6 +6,7 @@ import os
 import argparse
 import string
 import json
+import pandas as pd
 
 import json_schema_generator
 from json_schema_generator import Recorder, Validator
@@ -36,8 +37,12 @@ def validate(args):
     validator = Validator.from_path(args.json_schema_file_path)
     is_valid = validator.assert_json(json_data, is_load)
     
+    
     if is_valid:
         print (" * JSON is valid")
+        df = pd.read_json (args.json_source)
+        output_filename  = args.json_source[:-5]  # delete [.json] in the string
+        df.to_csv ("%s.csv" %output_filename, index = None)
     else:
         print (" ! JSON is broken ")
         print (validator.error_message)
